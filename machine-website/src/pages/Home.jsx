@@ -1,4 +1,4 @@
-import "./Home.css";
+ import "./Home.css";
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       {/* NAVBAR */}
       <header className="navbar">
         <h1 className="logo">Aqui va el nombre del negocio Oscar</h1>
-        <h1 className="logo">Jose Ramos</h1>
+        <h1 className="logo">Jose Ramos lol</h1>
 
         <nav>
           <a href="#">Home</a>
