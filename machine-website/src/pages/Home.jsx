@@ -87,7 +87,7 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <p>
-          Powered by <span>A&R Software Solutions</span>
+          Powered by <span> RA Media Solutions</span>
         </p>
       </footer>
     </div>
