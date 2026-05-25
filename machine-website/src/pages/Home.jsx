@@ -6,9 +6,7 @@ function App() {
       {/* NAVBAR */}
       <header className="navbar">
         <h1 className="logo">Aqui va el nombre del negocio Oscar</h1>
-        <h1 className="logo">Jose Ramos lol</h1>
-
-        <nav>
+       <nav>
           <a href="#">Home</a>
           <a href="#">Services</a>
           <a href="#">About</a>
