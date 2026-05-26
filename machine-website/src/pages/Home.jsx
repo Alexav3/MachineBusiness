@@ -1,29 +1,10 @@
-import { useState } from "react";
+import Navbar from "../components/Navbar";
 import "./Home.css";
 
 function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="app">
-      {/* NAVBAR */}
-      <header className="navbar">
-        <h1 className="logo">A&V Precise Manufacturing</h1>
-
-        {/* HAMBURGER */}
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </button>
-
-        {/* NAVIGATION */}
-        <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-          <a href="#/">Home</a>
-          <a href="#/services">Services</a>
-          <a href="#/gallery">Gallery</a>
-          <a href="#/about">About</a>
-          <a href="#/contact">Contact</a>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* HERO */}
       <section id="home" className="hero">
@@ -46,7 +27,6 @@ function Home() {
         <div className="service-container">
           <div className="card">
             <h3>Tube Bending</h3>
-
             <p>
               High-precision tube bending for custom metal fabrication and
               industrial applications.
@@ -55,7 +35,6 @@ function Home() {
 
           <div className="card">
             <h3>Metal Bending</h3>
-
             <p>
               Professional sheet metal bending and fabrication with accurate
               finishing.
@@ -64,7 +43,6 @@ function Home() {
 
           <div className="card">
             <h3>Custom Fabrication</h3>
-
             <p>
               Custom industrial metal solutions built with precision and fast
               turnaround times.

@@ -11,40 +11,6 @@
   color: #222;
 }
 
-/* NAVBAR */
-
-.navbar {
-  width: 100%;
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
-}
-
-.logo {
-  color: #ff3b3b;
-  font-size: 34px;
-  line-height: 1.1;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #ff3b3b;
-}
-
 /* HERO */
 
 .services-hero {
@@ -261,23 +227,6 @@
 /* MOBILE */
 
 @media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
   .services-hero h1 {
     font-size: 38px;
   }

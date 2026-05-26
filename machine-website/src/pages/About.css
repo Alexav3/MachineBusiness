@@ -11,36 +11,6 @@
   color: #222;
 }
 
-.navbar {
-  width: 100%;
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
-}
-
-.logo {
-  color: #ff3b3b;
-  font-size: 34px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #ff3b3b;
-}
-
 .about-hero {
   background-color: #151515;
   color: white;
@@ -137,23 +107,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
   .about-hero h1 {
     font-size: 38px;
   }

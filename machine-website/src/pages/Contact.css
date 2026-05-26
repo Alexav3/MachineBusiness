@@ -10,39 +10,6 @@
   color: #222;
 }
 
-/* NAVBAR */
-
-.navbar {
-  width: 100%;
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
-  position: relative;
-}
-
-.logo {
-  color: #ff3b3b;
-  font-size: 34px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #ff3b3b;
-}
-
 /* HERO */
 
 .contact-hero {
@@ -83,7 +50,7 @@
   text-align: center;
   border-top: 5px solid #ff3b3b;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(255, 59, 59, 0.22);
 }
 
 .info-card h3 {
@@ -96,12 +63,14 @@
 .contact-form-section {
   padding: 70px 20px;
   background-color: white;
+  border-top: 6px solid #ff3b3b;
 }
 
 .contact-form-section h2 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 40px;
+  color: #111;
 }
 
 .contact-form {
@@ -140,17 +109,19 @@
   text-align: center;
   padding: 70px 20px;
   background-color: #f4f4f4;
+  border-top: 6px solid #ff3b3b;
 }
 
 .hours-section h2 {
   font-size: 38px;
   margin-bottom: 20px;
-  color: black;
+  color: #111;
 }
 
 .hours-section p {
   font-size: 20px;
   margin-top: 10px;
+  color: #111;
 }
 
 /* FOOTER */
@@ -165,29 +136,26 @@
 
 .footer span {
   font-weight: bold;
+  color: #ff3b3b;
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
   .contact-hero h1 {
     font-size: 38px;
+  }
+
+  .contact-hero p {
+    font-size: 18px;
+  }
+
+  .contact-info {
+    padding: 50px 25px;
+  }
+
+  .contact-form-section,
+  .hours-section {
+    padding: 50px 25px;
   }
 }

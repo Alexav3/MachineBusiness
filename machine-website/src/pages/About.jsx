@@ -1,19 +1,10 @@
+import Navbar from "../components/Navbar";
 import "./About.css";
 
 function About() {
   return (
     <div className="about-page">
-      <header className="navbar">
-        <h1 className="logo">A&V Precise Manufacturing</h1>
-
-        <nav className="nav-links">
-          <a href="#/">Home</a>
-          <a href="#/services">Services</a>
-          <a href="#/gallery">Gallery</a>
-          <a href="#/about">About</a>
-          <a href="#/contact">Contact</a>
-        </nav>
-      </header>
+      <Navbar />
 
       <section className="about-hero">
         <h1>About Our Shop</h1>
@@ -59,7 +50,9 @@ function About() {
 
           <div className="value-card">
             <h3>Reliability</h3>
-            <p>We work hard to complete projects efficiently and professionally.</p>
+            <p>
+              We work hard to complete projects efficiently and professionally.
+            </p>
           </div>
         </div>
       </section>

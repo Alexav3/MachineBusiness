@@ -1,20 +1,10 @@
+import Navbar from "../components/Navbar";
 import "./Contact.css";
 
 function Contact() {
   return (
     <div className="contact-page">
-      {/* NAVBAR */}
-      <header className="navbar">
-        <h1 className="logo">A&V Precise Manufacturing</h1>
-
-        <nav className="nav-links">
-          <a href="#/">Home</a>
-          <a href="#/services">Services</a>
-          <a href="#/gallery">Gallery</a>
-          <a href="#/about">About</a>
-          <a href="#/contact">Contact</a>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* HERO */}
       <section className="contact-hero">
