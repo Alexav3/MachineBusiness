@@ -37,8 +37,8 @@ function App() {
             <h3>Tube bending</h3>
 
             <p>
-              High precision machining for custom parts and industrial
-              components.
+              High-precision tube bending for custom metal fabrication and
+              industrial applications.
             </p>
           </div>
 
