@@ -1,21 +1,32 @@
+import { useState } from "react";
 import "./Home.css";
 
-function App() {
+function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       {/* NAVBAR */}
       <header className="navbar">
         <h1 className="logo">A&V Precise Manufacturing</h1>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+
+        {/* HAMBURGER */}
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+
+        {/* NAVIGATION */}
+        <nav className={menuOpen ? "nav-links active" : "nav-links"}>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      {/* HERO SECTION */}
-      <section className="hero">
+      {/* HERO */}
+      <section id="home" className="hero">
         <div className="hero-content">
           <h2>Precision Metal Fabrication</h2>
 
@@ -29,12 +40,12 @@ function App() {
       </section>
 
       {/* SERVICES */}
-      <section className="services">
+      <section id="services" className="services">
         <h2 className="section-title">Our Services</h2>
 
         <div className="service-container">
           <div className="card">
-            <h3>Tube bending</h3>
+            <h3>Tube Bending</h3>
 
             <p>
               High-precision tube bending for custom metal fabrication and
@@ -50,11 +61,37 @@ function App() {
               finishing.
             </p>
           </div>
+
+          <div className="card">
+            <h3>Custom Fabrication</h3>
+
+            <p>
+              Custom industrial metal solutions built with precision and fast
+              turnaround times.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section id="gallery" className="services">
+        <h2 className="section-title">Gallery</h2>
+
+        <div className="service-container">
+          <div className="card">
+            <h3>Tube Projects</h3>
+            <p>Examples of precision tube bending and fabrication work.</p>
+          </div>
+
+          <div className="card">
+            <h3>Industrial Parts</h3>
+            <p>Custom parts and manufacturing solutions for clients.</p>
+          </div>
         </div>
       </section>
 
       {/* ABOUT */}
-      <section className="about">
+      <section id="about" className="about">
         <div className="about-content">
           <h2>About Our Shop</h2>
 
@@ -66,7 +103,7 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section className="contact">
+      <section id="contact" className="contact">
         <h2>Contact Us</h2>
 
         <p>Email: info@oscarcompany.com</p>
@@ -84,4 +121,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -5,13 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  min-height: 100%;
-}
-
 body {
   background-color: #f4f4f4;
   color: #222;
@@ -32,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
+  position: relative;
 }
 
 .logo {
@@ -40,20 +34,29 @@ body {
   line-height: 1.1;
 }
 
-nav {
+.nav-links {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-nav a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #ff3b3b;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 34px;
+  cursor: pointer;
 }
 
 /* HERO */
@@ -64,14 +67,11 @@ nav a:hover {
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop");
-
   background-size: cover;
   background-position: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   color: white;
   padding: 20px;
@@ -92,7 +92,6 @@ nav a:hover {
   font-size: 22px;
   max-width: 750px;
   margin: 0 auto 30px auto;
-  text-align: center;
 }
 
 .hero-content button {
@@ -153,7 +152,6 @@ nav a:hover {
 }
 
 .about h2 {
-  color: white;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -201,28 +199,42 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    padding: 25px 20px;
-    text-align: center;
+    padding: 20px;
   }
 
   .logo {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    max-width: 250px;
   }
 
-  nav {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: #111;
     flex-direction: column;
-    gap: 12px;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    gap: 0;
   }
 
-  .hero {
-    min-height: 80vh;
-    padding: 30px 20px;
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 12px 0;
   }
 
   .hero-content h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .hero-content p {
