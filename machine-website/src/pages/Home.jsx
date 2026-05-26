@@ -1,12 +1,12 @@
- import "./Home.css";
+import "./Home.css";
 
 function App() {
   return (
     <div className="app">
       {/* NAVBAR */}
       <header className="navbar">
-        <h1 className="logo">Aqui va el nombre del negocio Oscar</h1>
-       <nav>
+        <h1 className="logo">A&V Precise Manufacturing</h1>
+        <nav>
           <a href="#">Home</a>
           <a href="#">Services</a>
           <a href="#">About</a>
@@ -20,8 +20,8 @@ function App() {
           <h2>Precision Metal Fabrication</h2>
 
           <p>
-            Metal bending, and fabrication services for industrial and
-            commercial clients.
+            Tube and metal bending services for industrial and commercial
+            clients.
           </p>
 
           <button>Request a Quote</button>
@@ -34,7 +34,7 @@ function App() {
 
         <div className="service-container">
           <div className="card">
-            <h3>CNC Machining</h3>
+            <h3>Tube bending</h3>
 
             <p>
               High precision machining for custom parts and industrial
@@ -48,15 +48,6 @@ function App() {
             <p>
               Professional sheet metal bending and fabrication with accurate
               finishing.
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Welding</h3>
-
-            <p>
-              MIG and TIG welding solutions for commercial and industrial
-              projects.
             </p>
           </div>
         </div>
@@ -86,7 +77,7 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <p>
-          Powered by <span> RA Media Solutions</span>
+          Powered by <span>Markefy Solutions</span>
         </p>
       </footer>
     </div>
