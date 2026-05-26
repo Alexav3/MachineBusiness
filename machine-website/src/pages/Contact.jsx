@@ -1,10 +1,15 @@
-import "./Home.css";
+import "./Contact.css";
 
 function Contact() {
   return (
-    <div className="page">
+    <div className="contact-page">
       <h1>Contact Us</h1>
-      <p>aqui la manera de contactar</p>
+
+      <p>Email: info@avprecisemanufacturing.com</p>
+
+      <p>Phone: (713) 555-1234</p>
+
+      <p>Houston, Texas</p>
     </div>
   );
 }

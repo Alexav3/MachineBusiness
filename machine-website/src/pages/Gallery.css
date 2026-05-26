@@ -1,0 +1,11 @@
+.gallery-page {
+  min-height: 100vh;
+  padding: 100px 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.gallery-page h1 {
+  font-size: 45px;
+  color: #ff3b3b;
+}

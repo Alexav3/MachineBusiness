@@ -1,10 +1,10 @@
-import "./Home.css";
+import "./Gallery.css";
 
 function Gallery() {
   return (
-    <div className="page">
+    <div className="gallery-page">
       <h1>Gallery</h1>
-      <p>Aqui van a ir las fotos</p>
+      <p>Imagenes de projectos</p>
     </div>
   );
 }

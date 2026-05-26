@@ -1,10 +1,10 @@
-import "./Home.css";
+import "./Services.css";
 
 function Services() {
   return (
-    <div className="page">
+    <div className="services-page">
       <h1>Our Services</h1>
-      <p>aqui los servicios</p>
+      <p>Servicios que se ofrecen</p>
     </div>
   );
 }

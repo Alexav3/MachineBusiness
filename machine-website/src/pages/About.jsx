@@ -1,10 +1,10 @@
-import "./Home.css";
+import "./About.css";
 
 function About() {
   return (
-    <div className="page">
+    <div className="about-page">
       <h1>About Us</h1>
-      <p>aqui la informacion de la compania</p>
+      <p>informacion de la compania</p>
     </div>
   );
 }

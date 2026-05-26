@@ -1,0 +1,16 @@
+.services-page {
+  min-height: 100vh;
+  padding: 100px 40px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.services-page h1 {
+  font-size: 45px;
+  color: #ff3b3b;
+  margin-bottom: 20px;
+}
+
+.services-page p {
+  font-size: 20px;
+}
