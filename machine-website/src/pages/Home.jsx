@@ -17,11 +17,11 @@ function Home() {
 
         {/* NAVIGATION */}
         <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-            <a href="/">Home</a>
-            <a href="/services">Services</a>
-            <a href="/gallery">Gallery</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+          <a href="#/">Home</a>
+          <a href="#/services">Services</a>
+          <a href="#/gallery">Gallery</a>
+          <a href="#/about">About</a>
+          <a href="#/contact">Contact</a>
         </nav>
       </header>
 
